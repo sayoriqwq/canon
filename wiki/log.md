@@ -1,9 +1,17 @@
-# Wiki Log
+---
+audience: agent
+authors:
+  - codex
+reviewed_by:
+  - sayori
+purpose: 记录 wiki 维护历史，包括 source ingest、理论页修订和 lint。
+updated: 2026-06-24
+---
 
-Audience: agents reviewing wiki maintenance history.
+# Wiki 日志
 
-Record source ingests, theory page creation or revision, synthesis updates, and wiki lint passes here.
+这里记录 source ingest、理论页面创建或修订、synthesis 更新和 wiki lint。
 
-## Entries
+## 记录
 
-No wiki maintenance entries yet.
+暂无 wiki 维护记录。

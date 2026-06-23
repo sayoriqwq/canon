@@ -1,9 +1,17 @@
-# Claims
+---
+audience: [agent, human]
+authors:
+  - codex
+reviewed_by:
+  - sayori
+purpose: 作为 wiki claims 入口，链接可争议判断。
+updated: 2026-06-24
+---
 
-Audience: the user and agents evaluating contestable judgments.
+# Claims 判断
 
-Claim pages state judgments that can be supported, challenged, revised, or retired.
+Claim 页面记录可以被支持、挑战、修订或退休的判断。
 
-## Claims
+## 判断
 
-No claim pages yet.
+暂无 claim 页面。

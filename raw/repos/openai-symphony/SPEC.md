@@ -1,3 +1,13 @@
+---
+audience: [agent, human]
+authors:
+  - openai
+reviewed_by:
+  - sayori
+purpose: 保存 openai/symphony SPEC.md 的 pinned raw projection，供来源保真检查和理论消化。
+updated: 2026-06-24
+---
+
 # Symphony Service Specification
 
 Status: Draft v1 (language-agnostic)

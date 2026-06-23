@@ -1,9 +1,17 @@
-# Raw Docs
+---
+audience: [agent, human]
+authors:
+  - codex
+reviewed_by:
+  - sayori
+purpose: 作为 raw docs 入口，保存文档类原始材料。
+updated: 2026-06-24
+---
 
-Audience: agents and the user preserving documentation sources.
+# 文档原始材料
 
-Store documentation captures here.
+这里保存 documentation capture。
 
-## Docs
+## 文档
 
-No raw docs yet.
+暂无 raw docs。

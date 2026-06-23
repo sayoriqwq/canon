@@ -5,10 +5,10 @@ authors:
 reviewed_by:
   - sayori
 purpose: 保存和 sayori 交流时跨目录有效的沟通规范。
-updated: 2026-06-23
+updated: 2026-06-24
 ---
 
-# Communication
+# 交流规范
 
 ## 语言
 

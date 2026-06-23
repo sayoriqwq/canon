@@ -1,16 +1,24 @@
-# Fragments
+---
+audience: [agent, human]
+authors:
+  - codex
+reviewed_by:
+  - sayori
+purpose: 作为 fragments 系统入口，帮助捕获、裁决和追踪碎片。
+updated: 2026-06-24
+---
 
-Audience: agents and the user during capture, review, and distillation.
+# Fragments 碎片
 
-`fragments/` is the authoritative judgment system for unresolved input. It captures raw thoughts and routes them through review, but fragments are not permanent theory assets.
+`fragments/` 是未裁决输入的权威裁决系统。它捕获原始想法，并把它们送入 review，但 fragments 不是永久理论资产。
 
-## Local Files
+## 本地文件
 
-- [Rules](rules.md): verdict vocabulary and promotion criteria.
-- [Log](log.md): batch-level judgment history.
+- [Rules](rules.md)：裁决词汇和提升标准。
+- [Log](log.md)：batch 级裁决历史。
 
-## Directories
+## 目录
 
-- [Inbox](inbox/index.md): unreviewed fragments.
-- [Review](review/index.md): weekly judgment workspaces.
-- [Archive](archive/index.md): judged fragments kept for audit.
+- [Inbox](inbox/index.md)：未 review 的 fragments。
+- [Review](review/index.md)：weekly judgment 工作区。
+- [Archive](archive/index.md)：为 audit 保留的已裁决 fragments。

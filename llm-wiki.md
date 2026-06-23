@@ -1,3 +1,13 @@
+---
+audience: [agent, human]
+authors:
+  - external
+reviewed_by:
+  - sayori
+purpose: 保存 LLM wiki 原始理念文本，供 canon 架构回溯和对照。
+updated: 2026-06-24
+---
+
 # LLM Wiki
 
 A pattern for building personal knowledge bases using LLMs.

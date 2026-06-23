@@ -1,19 +1,26 @@
-# ADR-0006: ADRs Serve Canon Feedback Only
+---
+audience: agent
+authors:
+  - codex
+reviewed_by:
+  - sayori
+purpose: 记录 ADR 只服务 canon 仓库反馈的决策。
+updated: 2026-06-24
+status: accepted
+---
 
-## Status
+# ADR-0006: ADR 只服务 Canon Feedback
 
-Accepted
+## 背景
 
-## Context
+Canon 包含理论 wiki，但 repository architecture decisions 不会自动成为软件工程理论。
 
-Canon contains a theory wiki, but repository architecture decisions are not automatically software engineering theory.
+混合仓库 feedback 和 theory 会污染 wiki。
 
-Mixing repository feedback with theory would pollute the wiki.
+## 决策
 
-## Decision
+`docs/adr/` 只记录本仓库结构和维护行为相关的决策。
 
-`docs/adr/` records decisions about this repository's structure and maintenance behavior only.
+## 后果
 
-## Consequences
-
-Do not promote canon architecture decisions into `wiki/` unless the user explicitly asks to generalize them into software engineering theory.
+MUST NOT 把 canon architecture decisions 提升进 `wiki/`，除非用户明确要求把它们泛化成软件工程理论。

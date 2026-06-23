@@ -1,9 +1,17 @@
-# Raw Papers
+---
+audience: [agent, human]
+authors:
+  - codex
+reviewed_by:
+  - sayori
+purpose: 作为 raw papers 入口，保存论文类原始材料。
+updated: 2026-06-24
+---
 
-Audience: agents and the user preserving paper sources.
+# 论文原始材料
 
-Store papers or paper notes here. Link each digested source note from `wiki/sources/` when one exists.
+这里保存 paper 或 paper note。存在对应消化后 source note 时，SHOULD 链接到 `wiki/sources/`。
 
-## Papers
+## 论文
 
-No raw papers yet.
+暂无 raw papers。

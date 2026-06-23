@@ -1,22 +1,31 @@
-# ADR-0002: Four Peer Systems
+---
+audience: agent
+authors:
+  - codex
+reviewed_by:
+  - sayori
+purpose: 记录 canon 初始四系统架构及其被 vocabulary 系统取代的历史。
+updated: 2026-06-24
+status: superseded by ADR-0007
+---
 
-## Status
+# ADR-0002: 四个并列系统
 
-Accepted
+## 背景
 
-## Context
+Canon 需要处理未裁决 fragments、被保存的原始材料、消化后的理论资产和当前用户上下文，同时 MUST NOT 混合它们的生命周期。
 
-Canon needs to handle unresolved fragments, preserved source material, digested theory, and current user context without mixing their lifecycles.
+## 决策
 
-## Decision
+Canon 最初有四个并列系统：
 
-Canon has four peer systems:
+- `fragments/`：权威 fragment 裁决。
+- `raw/`：被保存的原始材料。
+- `wiki/`：消化后的理论资产。
+- `profile/`：当前用户和协作模型。
 
-- `fragments/`: authoritative fragment judgment.
-- `raw/`: preserved source material.
-- `wiki/`: digested theory assets.
-- `profile/`: current user and collaboration model.
+## 后果
 
-## Consequences
+每个系统都有自己的 index 和维护规则。MUST NOT 把这些层折叠成一个 notes 目录。
 
-Each system has its own index and maintenance rules. Do not collapse these layers into one notes directory.
+ADR-0007 已增加 `vocabulary/` 作为第五个并列系统。

@@ -1,9 +1,17 @@
-# Fragment Log
+---
+audience: agent
+authors:
+  - codex
+reviewed_by:
+  - sayori
+purpose: 记录 batch 级 fragment 裁决历史。
+updated: 2026-06-24
+---
 
-Audience: agents reviewing fragment judgment history.
+# Fragment 日志
 
-Record batch-level fragment reviews here. Do not copy every fragment body into this log.
+这里记录 batch 级 fragment reviews。MUST NOT 把每个 fragment 正文复制进本 log。
 
-## Entries
+## 记录
 
-No review batches yet.
+暂无 review batch。

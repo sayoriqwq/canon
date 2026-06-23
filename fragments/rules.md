@@ -1,37 +1,45 @@
-# Fragment Rules
+---
+audience: agent
+authors:
+  - codex
+reviewed_by:
+  - sayori
+purpose: 定义 fragment 裁决类型、提升标准和 provenance 规则。
+updated: 2026-06-24
+---
 
-Audience: agents judging unresolved input.
+# Fragment 规则
 
-## Purpose
+## 目的
 
-Fragments exist to be judged. They should not become a permanent parallel knowledge base.
+Fragments 只为裁决而存在。它们 MUST NOT 变成永久的并行知识库。
 
-## Verdicts
+## 裁决类型
 
-- `promote-to-wiki`: turn the fragment into or use it to revise a wiki asset.
-- `update-profile`: update the current user/context model.
-- `preserve-raw`: capture source material under `raw/`.
-- `hold-once`: defer exactly once.
-- `archive`: keep for audit, but do not promote.
-- `discard`: remove from active consideration.
+- `promote-to-wiki`：把 fragment 转成 wiki asset，或用它修订 wiki asset。
+- `update-profile`：更新当前用户或上下文模型。
+- `preserve-raw`：把原始材料捕获到 `raw/`。
+- `hold-once`：只推迟一次。
+- `archive`：保留用于 audit，但不提升。
+- `discard`：从活跃考虑中移除。
 
-## Promotion Standard
+## 提升标准
 
-A fragment can enter the wiki only if it performs at least one theoretical function:
+Fragment 只有至少完成一个理论功能，MAY 进入 wiki：
 
-- `explain`: clarify a concept.
-- `question`: produce a durable question.
-- `support`: strengthen a claim.
-- `challenge`: weaken or complicate a claim.
-- `generalize`: become a reusable pattern.
-- `revise`: change synthesis.
+- `explain`：澄清一个 concept。
+- `question`：产生一个 durable question。
+- `support`：增强一个 claim。
+- `challenge`：削弱或复杂化一个 claim。
+- `generalize`：成为可复用 pattern。
+- `revise`：改变 synthesis。
 
-## Hold Rule
+## Hold 规则
 
-`hold-once` cannot repeat. On the next review, choose a final verdict.
+`hold-once` MUST NOT 重复。下一次 review MUST 选择最终 verdict。
 
-## Provenance Rule
+## Provenance 规则
 
-Do not add fragment backlinks to wiki pages. After promotion, the fragment's active identity disappears.
+Wiki pages MUST NOT 添加 fragment backlinks。提升后，fragment 的活跃身份消失。
 
-After review, remove judged fragments from active inbox/review files. Preserve the fragment body in `archive/` only when audit value remains.
+Review 后，MUST 从活跃 inbox/review 文件中移除已裁决 fragments。只有仍有 audit 价值时，MAY 把 fragment 正文保存在 `archive/`。

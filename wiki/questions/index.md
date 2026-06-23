@@ -1,9 +1,17 @@
-# Questions
+---
+audience: [agent, human]
+authors:
+  - codex
+reviewed_by:
+  - sayori
+purpose: 作为 wiki questions 入口，链接 durable open questions。
+updated: 2026-06-24
+---
 
-Audience: the user and agents tracking durable open questions.
+# Questions 问题
 
-Question pages preserve questions that can guide future learning, source selection, or theory revision.
+Question 页面保存能够指导未来学习、source selection 或理论修订的问题。
 
-## Questions
+## 问题
 
-No question pages yet.
+暂无 question 页面。

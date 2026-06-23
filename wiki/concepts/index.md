@@ -1,9 +1,17 @@
-# Concepts
+---
+audience: [agent, human]
+authors:
+  - codex
+reviewed_by:
+  - sayori
+purpose: 作为 wiki concepts 入口，链接稳定理解对象。
+updated: 2026-06-24
+---
 
-Audience: the user and agents reading stable objects of understanding.
+# Concepts 概念
 
-Concept pages define and connect important theory objects.
+Concept 页面定义并连接重要理论对象。
 
-## Concepts
+## 概念
 
-No concept pages yet.
+暂无 concept 页面。

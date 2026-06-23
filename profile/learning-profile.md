@@ -5,10 +5,10 @@ authors:
 reviewed_by:
   - sayori
 purpose: 保存 sayori 的当前学习画像，帮助 agent 判断解释深度和协作方式。
-updated: 2026-06-23
+updated: 2026-06-24
 ---
 
-# Learning Profile
+# 学习画像
 
 用户是 `sayori`。
 

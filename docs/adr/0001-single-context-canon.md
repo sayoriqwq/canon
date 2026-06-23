@@ -1,23 +1,30 @@
-# ADR-0001: Single Context Canon
+---
+audience: agent
+authors:
+  - codex
+reviewed_by:
+  - sayori
+purpose: 记录 canon 作为 single-context 仓库的决策。
+updated: 2026-06-24
+status: accepted
+---
 
-## Status
+# ADR-0001: 单一上下文 Canon
 
-Accepted
+## 背景
 
-## Context
+Canon 有多个层：`fragments/`、`raw/`、`wiki/`、`profile/` 和 `vocabulary/`。这些层容易被误认为彼此独立的 context。
 
-Canon has multiple layers: `fragments/`, `raw/`, `wiki/`, and `profile/`. These layers could be mistaken for separate contexts.
+本仓库的真实目的统一：服务一个用户的长期软件工程理论建设。
 
-The repository's actual purpose is unified: support long-term software engineering theory building for one user.
+## 决策
 
-## Decision
+Canon 是 single-context 仓库。MUST NOT 创建 `CONTEXT-MAP.md`。
 
-Canon is a single-context repository. Do not create `CONTEXT-MAP.md`.
+共享意义放在根 `CONTEXT.md`，导航使用分层 `index.md`。
 
-Use root `CONTEXT.md` for shared meaning and use layered `index.md` files for navigation.
+## 后果
 
-## Consequences
+Agent SHOULD 把 `fragments/`、`raw/`、`wiki/`、`profile/`、`vocabulary/` 视为同一系统的不同层，而不是独立 domain。
 
-Agents should treat `fragments/`, `raw/`, `wiki/`, and `profile/` as layers of one system, not separate domains.
-
-If canon later contains multiple independent theory systems, revisit this decision.
+如果 canon 以后包含多个相互独立的理论系统，再回头审查这个决策。

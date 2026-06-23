@@ -1,10 +1,18 @@
-# Raw Repos
+---
+audience: [agent, human]
+authors:
+  - codex
+reviewed_by:
+  - sayori
+purpose: 作为 raw repos 入口，保存仓库类原始材料和 pin anchor。
+updated: 2026-06-24
+---
 
-Audience: agents and the user preserving repository learning material.
+# 仓库原始材料
 
-Store repository links, clone paths, read notes, or code excerpts here when they are source material.
+这里保存 repository link、clone path、read note 或 code excerpt。只有它们作为原始材料时，才放在这里。
 
-## Repos
+## 仓库
 
 - [OpenAI Symphony Pin](openai-symphony/PIN.md)：raw source 锚点。
 - [OpenAI Symphony SPEC](openai-symphony/SPEC.md)：pinned raw projection。

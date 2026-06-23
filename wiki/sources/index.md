@@ -1,9 +1,17 @@
-# Wiki Sources
+---
+audience: [agent, human]
+authors:
+  - codex
+reviewed_by:
+  - sayori
+purpose: 作为 wiki sources 入口，链接消化后的 source notes。
+updated: 2026-06-24
+---
 
-Audience: agents and the user reading digested source contributions.
+# Wiki Sources 来源笔记
 
-Source notes explain what a raw source contributes to the theory system. They do not duplicate full raw material.
+Source note 说明 raw source 对理论系统的贡献。它们 MUST NOT 复制完整 raw 原始材料。
 
-## Sources
+## 来源笔记
 
-No source notes yet.
+暂无 source notes。

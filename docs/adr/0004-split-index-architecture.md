@@ -1,23 +1,30 @@
-# ADR-0004: Split Index Architecture
+---
+audience: agent
+authors:
+  - codex
+reviewed_by:
+  - sayori
+purpose: 记录 canon 从一开始使用拆分 index 架构的决策。
+updated: 2026-06-24
+status: accepted
+---
 
-## Status
+# ADR-0004: 拆分式 Index 架构
 
-Accepted
+## 背景
 
-## Context
+用户偏好单一职责文档，并希望 agent 从一开始学习目标结构。
 
-The user prefers single-responsibility documents and wants agents to learn the target structure from the beginning.
+因为仓库还小就保留一个大 index，会训练出错误的维护模式。
 
-Keeping one large index while the repo is small would teach the wrong maintenance pattern.
+## 决策
 
-## Decision
+从一开始使用 split index architecture。
 
-Use split index architecture from the start.
+每个 `index.md` 只负责下一层。
 
-Each `index.md` owns only its next layer.
+## 后果
 
-## Consequences
+如果某个目录属于目标结构，即使暂时为空或很小，也 SHOULD 有本地 index。
 
-Even empty or small directories should have local indexes when they are part of the target structure.
-
-Do not replace the layered index system with a single global catalog.
+MUST NOT 用单一全局目录替代分层 index system。
