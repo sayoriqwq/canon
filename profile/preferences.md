@@ -4,32 +4,26 @@ updated: 2026-06-23
 
 # Preferences
 
-Audience: agents maintaining canon for the user.
+受众：跨目录和 `sayoriqwq` 协作的 agent。
 
 ## Knowledge Organization
 
-- Prefer single-responsibility documents.
-- Prefer split file and split index architecture from the start.
-- Do not keep a single large index just because the system is still small.
-- Prefer monthly fragment inbox files over one rolling inbox file.
-- Preserve raw source material when practical; use links when preservation is impractical.
-- Avoid duplicate naming such as `raw/sources/` and `wiki/sources/`; reserve `wiki/sources/` for digested source notes.
-
-## Canon Boundaries
-
-- Canon is a single-context repository.
-- Do not create `CONTEXT-MAP.md` unless canon later contains multiple independent contexts.
-- `fragments/`, `raw/`, `wiki/`, and `profile/` are peer systems.
-- `fragments/` is authoritative for unresolved input.
-- Fragment results disappear from active flow after judgment.
-- Do not keep fragment backlinks in wiki pages.
-- `profile/` stores current valid context only.
-- Remove or rewrite outdated profile content instead of keeping deprecated preferences.
+- 偏好单一职责文档。
+- 对需要长期维护的文档系统，偏好拆分文件和拆分 index。
+- 不要因为系统暂时还小，就保留一个巨大的 index。
+- 当结构本身会训练未来 agent 行为时，偏好一开始就使用目标结构。
+- 当相邻层级的区别很重要时，避免使用重复命名。
 
 ## Language
 
-- Use Simplified Chinese for main content.
-- Keep key terms, technical terms, and common English words when they are clearer than forced translation.
-- When introducing an unfamiliar English term, use `term(翻译)` on first mention.
-- After first explanation, the English term can be used directly.
-- Do not perform a one-time bulk rewrite only to remove existing English. When maintaining a document, progressively align the touched content with the language rules.
+- 主内容使用简体中文。
+- 关键术语、技术词汇，以及常见英文词在比强行翻译更清楚时可以保留。
+- 简单英文词、四六级范围内词汇、常见技术词不需要标注翻译。
+- 默认不要给英文术语添加括号中文标注。
+- 不要为了清除既有英文而做一次性批量重写。维护文档时，逐步把触碰到的内容对齐语言规则。
+
+## Profile Boundaries
+
+- 只保留离开当前目录后仍然成立的偏好。
+- 不要把 project-specific 操作规则放进 profile；这类规则应保存在该项目的 harness、instructions 或同等规则文件里。
+- 旧 profile 内容过期后，直接删除或改写，不保留 deprecated 偏好。

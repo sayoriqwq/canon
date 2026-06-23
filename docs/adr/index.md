@@ -10,5 +10,5 @@ ADRs here serve feedback for this repository only. They explain why canon is str
 - [0002 Four Peer Systems](0002-four-peer-systems.md)
 - [0003 Fragments As Authoritative Judgment System](0003-fragments-authoritative-judgment-system.md)
 - [0004 Split Index Architecture](0004-split-index-architecture.md)
-- [0005 Profile Current State Only](0005-profile-current-state-only.md)
+- [0005 Profile 只保存当前可迁移用户上下文](0005-profile-current-state-only.md)
 - [0006 ADRs Serve Canon Feedback Only](0006-adrs-serve-canon-feedback-only.md)

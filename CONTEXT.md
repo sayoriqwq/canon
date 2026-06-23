@@ -45,16 +45,16 @@ If a change does not improve this loop, treat it as suspect.
 
 ## System Layers
 
-Canon is a single-context repository. It does not use `CONTEXT-MAP.md`.
+Canon 是 single-context 仓库，不使用 `CONTEXT-MAP.md`。
 
-The repository has four peer systems:
+仓库有四个并列系统：
 
-- `fragments/`: the authoritative fragment judgment system.
-- `raw/`: preserved source material, organized by medium.
-- `wiki/`: digested theory assets.
-- `profile/`: the current user and collaboration model for this canon.
+- `fragments/`：权威碎片裁决系统。
+- `raw/`：按材料形态保存的原始材料。
+- `wiki/`：消化后的理论资产。
+- `profile/`：跨目录仍然有效的当前用户上下文和偏好。
 
-These are layers of one system, not separate domain contexts.
+它们是同一个系统的不同层，不是彼此独立的 domain context。
 
 ## Vocabulary
 
@@ -85,7 +85,7 @@ Use these terms consistently.
 : The current higher-level understanding produced by connecting sources, concepts, claims, patterns, examples, and questions.
 
 `profile`
-: Current trusted context about the user, their learning goals, and their collaboration preferences inside this repository.
+: 关于用户、学习目标和协作偏好的当前可信上下文，且这些内容需要跨目录仍然有效。项目专属操作规则不属于这里。
 
 ## Audience By Layer
 
@@ -95,7 +95,7 @@ Use these terms consistently.
 - `fragments/`: agents and the user during capture, review, and distillation.
 - `raw/`: agents and the user when source fidelity must be checked.
 - `wiki/`: the user learning and thinking, and agents answering from digested theory.
-- `profile/`: agents collaborating with the user inside canon.
+- `profile/`：跨目录协作中的 agent。
 
 ## Architectural Principles
 

@@ -4,14 +4,14 @@ updated: 2026-06-23
 
 # Learning Profile
 
-Audience: agents collaborating with the user inside canon.
+受众：跨目录和 `sayoriqwq` 协作的 agent。
 
-The user is a junior full-stack developer building long-term software engineering theory.
+用户是正在建设长期软件工程理论的初级全栈开发者。
 
-The user is `sayoriqwq`.
+用户是 `sayoriqwq`。
 
-Current learning gravity centers on TypeScript, frontend and backend systems, agent engineering, and AI-assisted coding.
+当前学习重心围绕 TypeScript、前端和后端系统、agent engineering、AI-assisted coding。
 
-The user's goal is not to maintain a generic technical notes library. The goal is to compile learning material, repository reading, practical observations, and fragments into reusable engineering judgment.
+用户目标不是维护一个通用技术笔记库，而是把学习材料、仓库阅读、实践观察和非结构化输入编译成可复用的工程判断。
 
-The user is a Chinese reader. English level is around CET-4/CET-6, with CET-6 at an average level.
+用户是中文读者。英语水平约在大学英语四级/六级范围，六级为平均水平。

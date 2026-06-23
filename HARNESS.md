@@ -22,7 +22,7 @@ If instructions conflict, stop and surface the conflict. Do not silently overrid
 
 Every document must have one audience and one job.
 
-Default to Simplified Chinese for main content because the primary user is a Chinese reader. Keep key technical terms and common English words when they are clearer than forced translation. When introducing an unfamiliar English term, write it as `term(翻译)` the first time; later mentions can use the English term directly.
+Default to Simplified Chinese for main content because the primary user is a Chinese reader. Keep key technical terms and common English words when they are clearer than forced translation. Do not add parenthetical Chinese glosses for English terms by default.
 
 Do not merge:
 
@@ -54,6 +54,8 @@ Rules:
 ## Fragments Workflow
 
 `fragments/` is the authoritative fragment judgment system.
+
+使用按月份拆分的 fragment inbox 文件，不使用一个长期滚动的大 inbox 文件。
 
 Fragment lifecycle:
 
@@ -119,6 +121,8 @@ The fragment archive and log are audit material. They are not theory sources.
 Raw files should preserve source fidelity. Do not interpret the material in raw files except for minimal capture metadata needed to identify the source.
 
 Use links only when preserving raw material is impractical.
+
+不要创建 `raw/sources/`；`wiki/sources/` 专门用于保存消化后的 source note。
 
 ## Wiki Workflow
 
@@ -200,24 +204,24 @@ When linting the wiki, check for:
 
 ## Profile Workflow
 
-`profile/` stores current trusted context for this canon only.
+`profile/` 保存跨目录仍然有效的当前可信用户上下文和偏好。Canon 专属操作规则属于 `HARNESS.md`，不属于 `profile/`。
 
-Rules:
+规则：
 
-- No `profile/log.md`.
-- No confidence fields.
-- No deprecated section.
-- No inferred/confirmed split.
-- Use `updated` because newer profile content usually wins in conflicts.
-- If a profile entry becomes wrong, update or remove it.
-- Do not assume profile preferences apply to other repositories.
-- If a preference looks portable, record it in `profile/portable-candidates.md`; do not export it automatically.
+- 不创建 `profile/log.md`。
+- 不使用 confidence 字段。
+- 不保留 deprecated 区域。
+- 不拆分 inferred/confirmed 区域。
+- 使用 `updated`，因为发生冲突时，更新的 profile 内容通常优先。
+- 如果某条 profile 内容变错了，直接更新或删除。
+- 不要把 canon-only 的结构、工作流或目录规则写进 `profile/`。
+- 如果某条规则只适用于本仓库，放进 `HARNESS.md` 或 `docs/adr/`。
 
-Profile updates are semi-active. If the user expresses a stable preference, goal, or collaboration habit, identify it as profile-worthy before updating.
+Profile 更新采用半主动模式。如果用户表达了稳定偏好、目标或协作习惯，更新前先说明它值得进入 profile。
 
 ## Git 规范
 
-本仓库使用 Conventional Commits(约定式提交)。提交信息格式：
+本仓库使用 Conventional Commits。提交信息格式：
 
 ```text
 <type>[optional scope][!]: <description>
@@ -232,7 +236,7 @@ Profile updates are semi-active. If the user expresses a stable preference, goal
 - `type` 和 `scope` 使用英文；`description` 优先使用简体中文。
 - 常用 `type`：`docs` 文档内容，`chore` 仓库维护，`feat` 新能力或新结构，`fix` 修正规则或内容错误，`refactor` 调整组织但不改变语义。
 - `scope` 使用被影响的系统或文件职责，例如 `harness`、`context`、`fragments`、`raw`、`wiki`、`profile`、`adr`。
-- breaking change(破坏性变更) 使用 `!` 或 footer 中的 `BREAKING CHANGE:` 标记。
+- breaking change 使用 `!` 或 footer 中的 `BREAKING CHANGE:` 标记。
 - 一个 commit 只表达一个主要意图；如果一个变更同时符合多个 type，优先拆成多个 commit。
 
 示例：
