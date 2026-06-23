@@ -22,6 +22,8 @@ If instructions conflict, stop and surface the conflict. Do not silently overrid
 
 Every document must have one audience and one job.
 
+Default to Simplified Chinese for main content because the primary user is a Chinese reader. Keep key technical terms and common English words when they are clearer than forced translation. When introducing an unfamiliar English term, write it as `term(翻译)` the first time; later mentions can use the English term directly.
+
 Do not merge:
 
 - System meaning with operating rules.
@@ -212,6 +214,37 @@ Rules:
 - If a preference looks portable, record it in `profile/portable-candidates.md`; do not export it automatically.
 
 Profile updates are semi-active. If the user expresses a stable preference, goal, or collaboration habit, identify it as profile-worthy before updating.
+
+## Git 规范
+
+本仓库使用 Conventional Commits(约定式提交)。提交信息格式：
+
+```text
+<type>[optional scope][!]: <description>
+
+[optional body]
+
+[optional footer(s)]
+```
+
+规则：
+
+- `type` 和 `scope` 使用英文；`description` 优先使用简体中文。
+- 常用 `type`：`docs` 文档内容，`chore` 仓库维护，`feat` 新能力或新结构，`fix` 修正规则或内容错误，`refactor` 调整组织但不改变语义。
+- `scope` 使用被影响的系统或文件职责，例如 `harness`、`context`、`fragments`、`raw`、`wiki`、`profile`、`adr`。
+- breaking change(破坏性变更) 使用 `!` 或 footer 中的 `BREAKING CHANGE:` 标记。
+- 一个 commit 只表达一个主要意图；如果一个变更同时符合多个 type，优先拆成多个 commit。
+
+示例：
+
+```text
+docs(harness): 增加 git 提交规范
+fix(profile): 修正用户语言偏好
+feat(fragments): 增加 weekly distill 流程
+docs(context)!: 调整 canon 上下文边界
+
+BREAKING CHANGE: 不再把 fragments 视为 wiki provenance。
+```
 
 ## ADR Workflow
 

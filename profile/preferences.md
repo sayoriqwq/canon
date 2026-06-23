@@ -25,3 +25,11 @@ Audience: agents maintaining canon for the user.
 - Do not keep fragment backlinks in wiki pages.
 - `profile/` stores current valid context only.
 - Remove or rewrite outdated profile content instead of keeping deprecated preferences.
+
+## Language
+
+- Use Simplified Chinese for main content.
+- Keep key terms, technical terms, and common English words when they are clearer than forced translation.
+- When introducing an unfamiliar English term, use `term(翻译)` on first mention.
+- After first explanation, the English term can be used directly.
+- Do not perform a one-time bulk rewrite only to remove existing English. When maintaining a document, progressively align the touched content with the language rules.
