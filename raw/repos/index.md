@@ -6,4 +6,5 @@ Store repository links, clone paths, read notes, or code excerpts here when they
 
 ## Repos
 
-No raw repo material yet.
+- [OpenAI Symphony Pin](openai-symphony/PIN.md)：raw source 锚点。
+- [OpenAI Symphony SPEC](openai-symphony/SPEC.md)：pinned raw projection。

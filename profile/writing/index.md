@@ -16,3 +16,5 @@ updated: 2026-06-23
 
 - [Concept](concept.md)：文档写作的核心理念。
 - [Language](language.md)：简体中文主内容与英文术语使用。
+- [Input And Output Patterns](io-patterns.md)：用清晰模式约束模型输入和输出。
+- [Normative Keywords](normative-keywords.md)：用指令强度词表达 agent 规范。
