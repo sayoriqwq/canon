@@ -14,4 +14,6 @@ Claim 页面记录可以被支持、挑战、修订或退休的判断。
 
 ## 判断
 
-暂无 claim 页面。
+- [Agent-facing Docs Need Patterns, Not Descriptions Alone](agent-docs-need-patterns-not-descriptions.md)：面向 agent 的规范应优先给出可识别、可复用、可检查的模式。
+- [Document Structure Trains Maintenance](document-structure-trains-maintenance.md)：文档结构会训练后续 agent 和人的维护行为。
+- [Strong Constraints Should Be Scarce](strong-constraints-should-be-scarce.md)：强约束应只用于真正不可破坏的边界。

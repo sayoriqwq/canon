@@ -198,7 +198,7 @@ MUST NOT 创建 `raw/sources/`；`wiki/sources/` 专门用于保存消化后的 
 
 主要分类：
 
-- `sources/`：消化 raw 原始材料的 source notes。
+- `sources/`：消化 raw 原始材料或明确提升的内部 source 的 source notes。
 - `concepts/`：稳定理解对象。
 - `claims/`：可争议判断。
 - `patterns/`：可复用结构或实践。
@@ -206,7 +206,7 @@ MUST NOT 创建 `raw/sources/`；`wiki/sources/` 专门用于保存消化后的 
 - `synthesis/`：更高层的当前理解。
 - `questions/`：durable open questions。
 
-MUST NOT 把完整 raw content 复制到 `wiki/sources/`。Source note 只说明该 source 对理论系统的贡献。
+MUST NOT 把完整 source content 复制到 `wiki/sources/`。Source note 只说明该 source 对理论系统的贡献。
 
 引用方向：
 
@@ -216,7 +216,15 @@ raw/<medium>/<source>
   -> wiki/concepts | wiki/claims | wiki/patterns | wiki/examples | wiki/synthesis | wiki/questions
 ```
 
-理论页面 SHOULD 链接到 `wiki/sources/`，MUST NOT 直接链接到 `raw/`，除非用户明确要求直接检查 evidence。
+当用户明确把内部文档提升为 source 时，允许这个方向：
+
+```text
+profile/<area> | other internal source
+  -> wiki/sources/<source-note>
+  -> wiki/concepts | wiki/claims | wiki/patterns | wiki/examples | wiki/synthesis | wiki/questions
+```
+
+理论页面 SHOULD 链接到 `wiki/sources/`，MUST NOT 直接链接到 `raw/` 或被提升的内部 source，除非用户明确要求直接检查 evidence。
 
 ## Wiki Metadata
 
@@ -232,7 +240,7 @@ updated: YYYY-MM-DD
 ---
 ```
 
-`wiki/sources/` 页面需要额外添加 `raw`：
+`wiki/sources/` 页面需要额外添加 `raw`。该字段记录 source note 消化的源文件；通常是 `raw/` 文件，用户明确提升内部文档时 MAY 指向对应内部 source：
 
 ```yaml
 raw:

@@ -44,3 +44,7 @@ updated: 2026-06-24
 
 `output pattern`
 : agent 应如何生成结果的稳定结构，例如固定章节、必填字段、状态流转格式、检查清单格式。
+
+`assertion`
+: 文档迭代时被识别和审查的最小语义单元。一份 Markdown 文档由多条 assertion 组成。
+_Avoid_: 测试断言、形式逻辑命题

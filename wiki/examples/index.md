@@ -14,4 +14,5 @@ Example 页面展示 concept、claim 或 pattern 如何出现在具体 source、
 
 ## 例子
 
-暂无 example 页面。
+- [Vocabulary Entry as Assertion](vocabulary-entry-as-assertion.md)：术语表词条如何构成 assertion。
+- [Next.js Docs Constraint Assertion](nextjs-docs-constraint-assertion.md)：项目约束如何作为 assertion 被审查。

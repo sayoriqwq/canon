@@ -22,6 +22,12 @@ Markdown 文档 SHOULD 被视为可组合的模块单元。
 
 metadata 承载文档级别的持久化状态信息。结构化正文承载可阅读、可维护、可迭代的内容。
 
+## Assertion 层
+
+Markdown 文档的语义内容由多条 assertion 组成。Assertion 是文档迭代时被识别和审查的最小语义单元。
+
+修改文档时，agent SHOULD 识别被新增、修订、拆分、合并、挑战或移除的 assertion。具体协作规则见 [Assertion 协作规则](assertions.md)。
+
 ## Metadata 层
 
 文档 metadata 用来描述文档的读者、生成来源、review 状态和使用目的。

@@ -10,8 +10,8 @@ updated: 2026-06-24
 
 # Wiki Sources 来源笔记
 
-Source note 说明 raw source 对理论系统的贡献。它们 MUST NOT 复制完整 raw 原始材料。
+Source note 说明 raw source 或明确提升的内部 source 对理论系统的贡献。它们 MUST NOT 复制完整 source 正文。
 
 ## 来源笔记
 
-暂无 source notes。
+- [Profile Writing](profile-writing.md)：把 `profile/writing/` 作为内部 source，消化成写作理论资产。

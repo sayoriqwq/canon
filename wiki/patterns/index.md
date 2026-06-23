@@ -14,4 +14,7 @@ Pattern 页面描述可复用工程结构，用于指导设计或实现。
 
 ## 模式
 
-暂无 pattern 页面。
+- [Assertion-level Review](assertion-level-review.md)：按 assertion 识别、审查和修改语义密集文档。
+- [Frontmatter for Persistent State](frontmatter-for-persistent-state.md)：用 frontmatter 保存文档级持久状态。
+- [Normative Keyword Ladder](normative-keyword-ladder.md)：用分层指令强度词约束 agent 行为。
+- [Split Index Document Architecture](split-index-document-architecture.md)：用拆分索引维护长期文档系统。

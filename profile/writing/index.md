@@ -4,7 +4,7 @@ authors:
   - codex
 reviewed_by:
   - sayori
-purpose: 作为文档写作偏好入口，帮助 agent 找到写作理念和语言规则。
+purpose: 作为文档写作偏好入口，帮助 agent 找到写作理念、协作规则和语言规则。
 updated: 2026-06-24
 ---
 
@@ -15,6 +15,7 @@ updated: 2026-06-24
 ## 页面
 
 - [文档写作理念](concept.md)
+- [Assertion 协作规则](assertions.md)
 - [语言规则](language.md)
 - [输入输出模式](io-patterns.md)
 - [指令强度词](normative-keywords.md)
