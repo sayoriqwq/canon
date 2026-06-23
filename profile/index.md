@@ -14,6 +14,8 @@ updated: 2026-06-23
 
 ## Pages
 
+- [Communication](communication.md)：交流规范。
+- [Environment](environment.md)：跨目录工具环境偏好。
 - [Learning Profile](learning-profile.md)：学习画像。
 - [Preferences](preferences.md)：偏好。
 - [Working Style](working-style.md)：协作方式。
