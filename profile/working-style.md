@@ -1,10 +1,14 @@
 ---
+audience: agent
+authors:
+  - codex
+reviewed_by:
+  - sayori
+purpose: 保存和 sayori 协作时跨目录有效的工作方式偏好。
 updated: 2026-06-23
 ---
 
 # Working Style
-
-受众：跨目录和 `sayoriqwq` 协作的 agent。
 
 - 当系统设计不清楚时，回到用户的核心目标和 feedback loop 来挑战方案。
 - 相比直接增加容器或分类，更偏好 first-principles reasoning。

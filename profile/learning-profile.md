@@ -1,14 +1,18 @@
 ---
+audience: agent
+authors:
+  - codex
+reviewed_by:
+  - sayori
+purpose: 保存 sayori 的当前学习画像，帮助 agent 判断解释深度和协作方式。
 updated: 2026-06-23
 ---
 
 # Learning Profile
 
-受众：跨目录和 `sayoriqwq` 协作的 agent。
-
 用户是正在建设长期软件工程理论的初级全栈开发者。
 
-用户是 `sayoriqwq`。
+用户是 `sayori`。
 
 当前学习重心围绕 TypeScript、前端和后端系统、agent engineering、AI-assisted coding。
 

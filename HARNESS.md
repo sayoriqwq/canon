@@ -24,6 +24,28 @@ Every document must have one audience and one job.
 
 Default to Simplified Chinese for main content because the primary user is a Chinese reader. Keep key technical terms and common English words when they are clearer than forced translation. Do not add parenthetical Chinese glosses for English terms by default.
 
+对长期维护的 Markdown 文档，如果文件有 frontmatter，就用 metadata 维护文档读者、来源和用途。除非文档格式没有 metadata block，否则不要在正文段落里重复写受众。
+
+基础 metadata：
+
+```yaml
+audience: agent | human | [agent, human]
+authors:
+  - codex
+reviewed_by:
+  - sayori
+purpose: 一句话说明这份文档帮助读者完成什么
+updated: YYYY-MM-DD
+```
+
+规则：
+
+- `audience` 只描述读者类型，不写具体人名、场景或任务。
+- `authors` 描述文档由谁生成或主要撰写。
+- `reviewed_by` 描述谁明确 review 或批准过该文档。
+- `purpose` 描述文档的使用场景。
+- 不使用 `owner` 表达生成者或批准者。
+
 Do not merge:
 
 - System meaning with operating rules.

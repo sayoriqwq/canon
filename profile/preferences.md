@@ -1,26 +1,23 @@
 ---
+audience: agent
+authors:
+  - codex
+reviewed_by:
+  - sayori
+purpose: 保存跨目录仍然成立的用户偏好，并指向更细分的偏好页面。
 updated: 2026-06-23
 ---
 
 # Preferences
 
-受众：跨目录和 `sayoriqwq` 协作的 agent。
-
 ## Knowledge Organization
 
 - 偏好单一职责文档。
-- 对需要长期维护的文档系统，偏好拆分文件和拆分 index。
-- 不要因为系统暂时还小，就保留一个巨大的 index。
-- 当结构本身会训练未来 agent 行为时，偏好一开始就使用目标结构。
-- 当相邻层级的区别很重要时，避免使用重复命名。
+- 对需要长期维护的文档系统，偏好拆分文件和拆分 index。具体文档写作偏好见 [Writing](writing/index.md)。
 
 ## Language
 
-- 主内容使用简体中文。
-- 关键术语、技术词汇，以及常见英文词在比强行翻译更清楚时可以保留。
-- 简单英文词、四六级范围内词汇、常见技术词不需要标注翻译。
-- 默认不要给英文术语添加括号中文标注。
-- 不要为了清除既有英文而做一次性批量重写。维护文档时，逐步把触碰到的内容对齐语言规则。
+- 文档语言偏好见 [Writing Language](writing/language.md)。
 
 ## Profile Boundaries
 
