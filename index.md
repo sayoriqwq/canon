@@ -4,24 +4,22 @@ authors:
   - codex
 reviewed_by:
   - sayori
-purpose: 作为 canon 根入口，帮助 agent 找到并列系统和操作上下文。
-updated: 2026-06-24
+purpose: 作为 canon 根入口，帮助 agent 进入 wiki federation、raw 和操作上下文。
+updated: 2026-06-25
 ---
 
 # Canon
 
-Canon 是个人软件工程理论系统。先从这里进入，再根据任务进入对应子系统。
+Canon 是一个 personal LLM-wiki federation。先从这里进入，再根据任务进入 wiki federation、raw 或操作上下文。
 
-## 系统
+## 核心入口
 
-- [Fragments](fragments/index.md)：权威碎片裁决系统。
-- [Raw](raw/index.md)：按材料形态保存的原始材料。
-- [Wiki](wiki/index.md)：消化后的理论资产。
-- [Profile](profile/index.md)：当前用户画像和协作模型。
-- [Vocabulary](vocabulary/index.md)：canon 共享的分层术语。
+- [Wiki Federation](wiki/index.md)：唯一长期知识主体。
+- [Raw](raw/index.md)：原始材料层，不是 wiki。
+- [LLM Wiki](llm-wiki.md)：外部原始参照。
 
 ## 操作上下文
 
-- [Context](CONTEXT.md)：仓库意义、边界和系统层级。
+- [Context](CONTEXT.md)：仓库意义、边界和顶层架构。
 - [Harness](HARNESS.md)：agent 操作规则。
 - [ADRs](docs/adr/index.md)：canon 仓库架构决策。

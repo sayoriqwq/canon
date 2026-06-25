@@ -4,19 +4,68 @@ authors:
   - codex
 reviewed_by:
   - sayori
-purpose: 说明 canon 的仓库意义、边界、系统层级和核心反馈回路。
-updated: 2026-06-24
+purpose: 说明 canon 作为 personal LLM-wiki federation 的仓库意义、边界和顶层架构。
+updated: 2026-06-25
 ---
 
 # Canon 上下文
 
 ## 目的
 
-Canon 是个人软件工程理论系统。
+Canon 是一个 personal LLM-wiki federation。
 
-它服务于 `profile/` 中描述的用户：一个围绕现代软件系统建设长期理解的开发者。
+它以 [LLM Wiki](llm-wiki.md) 为原始参照：LLM 不只在 query 时检索原始材料，而是持续建立、维护和查询一个持久、互联、会复利增长的 Markdown wiki。
 
-目标不是收集笔记，而是把学习输入编译成持久的工程判断。
+Canon 的目标不是保存零散笔记，也不是维护多个并列知识系统，而是让长期有效的知识、偏好、术语和理论都进入 `wiki/` 下的 federation，并通过明确的 sub-wiki ownership 保持唯一真源。
+
+## 顶层架构
+
+Canon 只有一个长期知识主体：
+
+```text
+wiki/
+```
+
+`wiki/` 是 federated wiki。它对用户表现为一个整体；对 agent 维护时拆成多个 sub-wiki。Sub-wiki 是 assertion ownership 区域，不是要求用户显式指定的入口。
+
+当前 sub-wiki：
+
+- `wiki/federation/`：canon 自己的 wiki federation 理论。
+- `wiki/profile/`：当前用户模型、偏好和协作语义。
+- `wiki/vocabulary/`：跨 sub-wiki 共享术语、关系语义和边界。
+- `wiki/software-engineering/`：软件工程理论资产。
+
+非 wiki 层：
+
+- `raw/`：原始材料层，只服务来源保真，不承载综合理解。
+- `AGENTS.md`、`CONTEXT.md`、`HARNESS.md`、`docs/adr/`：schema 和仓库治理层，规定 agent 如何维护 federation。
+- `llm-wiki.md`：外部原始参照，不是 canon 自己的理论展开。
+
+## 核心不变量
+
+Read can be federated; write must be owned.
+
+一个问题可以读取多个 sub-wiki；写回时必须选择明确的 owning sub-wiki。
+
+每条 durable assertion 只能有一个 owning sub-wiki 或 raw source。其他位置只能链接、引用、摘要、派生、泛化或投影，不能复制成第二真源。
+
+Sub-wiki 按 assertion ownership 拆分，不按主题词拆分。判断页面归属时，看它主张的 assertion 类型，而不是它提到了哪些主题。
+
+## 反馈回路
+
+Canon 服务这个循环：
+
+```text
+source or conversation
+  -> route
+  -> read owning and related sub-wikis
+  -> answer or ingest
+  -> write durable assertions to one owning sub-wiki
+  -> update cross-links, index, and log
+  -> lint duplicate truth, stale links, and missing connections
+```
+
+如果某个变更不能改善这个循环，SHOULD 把它视为可疑变更。
 
 ## 非目标
 
@@ -24,56 +73,21 @@ Canon 不是：
 
 - 项目任务追踪器。
 - prompt snippet dump。
+- 临时 fragment inbox。
 - 仓库专属 coding rule 集合。
-- 通用技术 taxonomy。
-- 永久保存每个有趣 fragment 的地方。
-- 替代具体实践仓库的地方。
+- 原始材料解释层。
+- 多个并列系统的聚合目录。
+- 每个有趣 fragment 的永久保存地。
 
-实践发生在具体仓库中。Canon 只在实践被抽象成可复用理解后保存理论。
-
-## 核心反馈回路
-
-本系统服务于这个循环：
-
-```text
-material or fragment
-  -> capture
-  -> judge
-  -> digest
-  -> connect
-  -> revise current understanding
-  -> improve future reading, coding, and agent collaboration
-```
-
-如果某个变更不能改善这个循环，SHOULD 把它视为可疑变更。
-
-## 系统层级
-
-Canon 是 single-context 仓库，不使用 `CONTEXT-MAP.md`。
-
-仓库有五个并列系统：
-
-- `fragments/`：权威碎片裁决系统。
-- `raw/`：按材料形态保存的原始材料。
-- `wiki/`：消化后的理论资产。
-- `profile/`：跨目录仍然有效的当前用户上下文和偏好。
-- `vocabulary/`：跨目录有效的分层术语表。
-
-它们是同一个系统的不同层，不是彼此独立的 domain context。
-
-## 术语表
-
-完整术语表在 `vocabulary/` 中维护。`CONTEXT.md` 不保留核心术语副本，避免两处定义漂移。
-
-维护或查询术语时，进入 [Vocabulary](vocabulary/index.md)。
+未被编译进 owning sub-wiki 的临时想法不在 canon 内长期保存。
 
 ## 架构原则
 
-- SHOULD 偏好单一职责文档。
-- SHOULD 从一开始使用 split index architecture，即使仓库还小。
-- MUST NOT 因为文件少就保留一个巨大的 index。
-- MUST NOT 让 fragments 变成永久理论资产。
-- MUST NOT 把 raw 原始材料直接放进理论页面。
-- MUST NOT 在 `profile/` 中保留过期偏好。
-- MUST NOT 把 canon 仓库决策提升进 `wiki/`，除非用户明确要求把它泛化成软件工程理论。
-- MUST NOT 把 glossary 副本放回 `CONTEXT.md`；分层术语使用 `vocabulary/`。
+- MUST 让 `wiki/` 成为唯一长期知识主体。
+- MUST 把 `profile`、`vocabulary` 和软件工程理论都建模为 `wiki/` 下的 sub-wiki。
+- MUST NOT 在根目录恢复 `profile/`、`vocabulary/` 或 `fragments/` 作为并列系统。
+- MUST 保持 `raw/` 为非 wiki 的原始材料层。
+- MUST 保持每条 durable assertion 的唯一 owner。
+- MUST 让用户可以只问 canon，由 agent 负责 query routing。
+- SHOULD 使用 split index architecture：根 `index.md` 指向顶层入口，`wiki/index.md` 指向 sub-wiki，每个 sub-wiki 的 `index.md` 只列下一层。
+- SHOULD 把 wiki federation 理论写入 `wiki/federation/`，把维护规则写入 `HARNESS.md`，把仓库决策写入 `docs/adr/`。
