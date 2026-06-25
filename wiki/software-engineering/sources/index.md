@@ -10,7 +10,7 @@ updated: 2026-06-25
 
 # Sources 来源笔记
 
-Source note 说明 raw source 或明确提升的内部 source 对 software-engineering sub-wiki 的贡献。它们 MUST NOT 复制完整 source 正文。
+Source note 说明 raw source 或明确提升的内部 source 对 software-engineering sub-wiki 的贡献。
 
 ## 来源笔记
 

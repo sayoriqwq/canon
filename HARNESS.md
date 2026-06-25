@@ -180,6 +180,16 @@ MUST NOT 因为一个内容涉及多个主题就复制到多个 sub-wiki。
 
 保存跨 sub-wiki 共享的术语、关系语义和边界。
 
+优先按术语服务的语义边界分层，而不是按抽象程度分层。
+
+如果一个术语主要服务 canon 和 wiki federation，放入 `wiki/vocabulary/canon/`。
+
+如果一个术语主要服务 agent 协作、指令规范、模型输入输出约束，放入 `wiki/vocabulary/agent/`。
+
+如果一个术语主要服务用户模型和偏好维护，放入 `wiki/vocabulary/profile/`。
+
+当某个 sub-wiki 的共享术语规模变大，MAY 新增专门 vocabulary 区域；MUST NOT 提前创建空目录。
+
 词条格式：
 
 ```md
@@ -193,6 +203,8 @@ _Avoid_: 容易混淆的同义词或过载词
 ### `wiki/software-engineering/`
 
 保存软件工程和 agent-facing 文档相关的理论资产。
+
+Source note 说明 raw source 或明确提升的内部 source 对 software-engineering sub-wiki 的贡献，MUST NOT 复制完整 source 正文。
 
 当前主要 category：
 

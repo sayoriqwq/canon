@@ -4,20 +4,20 @@ authors:
   - codex
 reviewed_by:
   - sayori
-purpose: 定义 normative keyword 作为 agent 指令强度表达。
+purpose: 说明 normative keyword 在 agent-facing 文档理论中的作用。
 type: concept
 status: active
 confidence: high
 sources:
   - ../sources/profile-writing.md
-updated: 2026-06-24
+updated: 2026-06-25
 ---
 
 # Normative Keyword
 
-## 定义
+## 理论使用
 
-Normative keyword 是表达指令强度的关键词，例如 `MUST`、`MUST NOT`、`SHOULD`、`SHOULD NOT`、`MAY`。
+`normative keyword` 的词义边界由 [Agent 术语表](../../vocabulary/agent/index.md) owning。本页只说明 normative keyword 在 agent-facing 文档理论中的作用。
 
 它让 agent 区分不可违反的约束、默认策略和开放空间，避免所有要求都被同一种语气抹平。
 

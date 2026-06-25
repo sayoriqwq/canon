@@ -4,20 +4,20 @@ authors:
   - codex
 reviewed_by:
   - sayori
-purpose: 定义 assertion 作为文档迭代中的最小语义单元。
+purpose: 说明 assertion 在文档维护理论中的作用。
 type: concept
 status: active
 confidence: high
 sources:
   - ../sources/profile-writing.md
-updated: 2026-06-24
+updated: 2026-06-25
 ---
 
 # 断言 Assertion
 
-## 定义
+## 理论使用
 
-Assertion 是文档迭代时被识别和审查的最小**语义单元**。
+`assertion` 的词义边界由 [Agent 术语表](../../vocabulary/agent/index.md) owning。本页只说明 assertion 在文档维护理论中的作用。
 
 一份 Markdown 文档由多条 assertion 组成。迭代文档时，agent 审查的对象不是整份文档的模糊印象，而是一条条可以成立、过期、冲突、拆分或合并的 assertion。
 
