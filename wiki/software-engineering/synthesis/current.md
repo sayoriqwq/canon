@@ -9,6 +9,7 @@ type: synthesis
 status: active
 confidence: medium
 sources:
+  - ../sources/effect-without-effect-ts.md
   - ../sources/profile-writing.md
 updated: 2026-06-25
 ---
@@ -31,6 +32,12 @@ Markdown 文档不只是文本容器，而是 [document module](../concepts/docu
 - [Assertion-level Review](../patterns/assertion-level-review.md)
 - [Normative Keyword Ladder](../patterns/normative-keyword-ladder.md)
 - [Split Index Document Architecture](../patterns/split-index-document-architecture.md)
+
+## 操作签名应暴露 effect 边界
+
+来自 [Effect Without Effect-TS](../sources/effect-without-effect-ts.md) 的当前判断是：TypeScript 中的 effectful operation 不应只暴露 `Promise<T>`。
+
+[Effectful Function Signature](../concepts/effectful-function-signature.md) 要求函数边界表达成功值、失败通道和依赖能力。[Explicit Effects in Plain TypeScript](../patterns/explicit-effects-in-plain-typescript.md) 是不引入完整 framework 时的可用模式；[Plain TypeScript Can Carry Algebraic Effect Ideas](../claims/plain-typescript-can-carry-algebraic-effect-ideas.md) 则保留了它的规模边界。
 
 ## 维护行为由结构塑造
 

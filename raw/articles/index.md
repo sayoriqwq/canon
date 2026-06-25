@@ -14,4 +14,4 @@ updated: 2026-06-25
 
 ## 文章
 
-暂无 raw articles。
+- [Effect Without Effect-TS: Algebraic Thinking in Plain TypeScript](<Effect Without Effect-TS Algebraic Thinking in Plain TypeScript.md>)：Christian Ekrem 关于在 plain TypeScript 中显式表达错误、依赖和组合边界的文章；已消化为 [source note](../../wiki/software-engineering/sources/effect-without-effect-ts.md)。

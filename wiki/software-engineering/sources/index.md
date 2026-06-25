@@ -14,4 +14,5 @@ Source note 说明 raw source 或明确提升的内部 source 对 software-engin
 
 ## 来源笔记
 
+- [Effect Without Effect-TS](effect-without-effect-ts.md)：消化 plain TypeScript 中 typed errors、explicit dependencies 和组合边界的工程理论。
 - [Profile Writing](profile-writing.md)：把 `wiki/profile/writing/` 作为内部 source，消化成写作理论资产。
